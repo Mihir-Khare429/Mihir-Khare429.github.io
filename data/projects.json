@@ -1,0 +1,565 @@
+{
+  "_instructions": "Add your projects.",
+  "sectionTitle": "Featured Work",
+  "projects": [
+    {
+      "title": "Intelligent Multimedia Processing (IMP) for Enterprises",
+      "description": "Built an end-to-end ML system that automates the extraction and indexing of enterprise multimedia, enabling natural-language search and automated meeting minutes generation. Architected a multimodal RAG pipeline — Whisper (transcription) + Sentence Transformers (semantic search) + Flan-T5-Large (generation) — served via FastAPI. Achieved <200 ms embedding latency through model quantization and distributed training on Ray, cutting manual search time significantly. Automated CI/CD and continuous-training workflows using Terraform, Ansible, and ArgoCD",
+      "longDescription": "Built an end-to-end ML system that automates the extraction and indexing of enterprise multimedia, enabling natural-language search and automated meeting minutes generation. Architected a multimodal RAG pipeline — Whisper (transcription) + Sentence Transformers (semantic search) + Flan-T5-Large (generation) — served via FastAPI. Achieved <200 ms embedding latency through model quantization and distributed training on Ray, cutting manual search time significantly. Automated CI/CD and continuous-training workflows using Terraform, Ansible, and ArgoCD",
+      "category": "Backend Development",
+      "technologies": [
+        "Whisper",
+        "Sentence Transformers",
+        "Flan-T5-Large",
+        "FastAPI",
+        "Ray",
+        "Terraform",
+        "Ansible",
+        "ArgoCD"
+      ],
+      "icon": "fas fa-server",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": true,
+      "github": "https://github.com/Akkey01/MLops-Final-Project/commits?author=Mihir-Khare429",
+      "demo": "https://github.com/Akkey01/MLops-Final-Project/commits?author=Mihir-Khare429",
+      "links": {
+        "github": "https://github.com/Akkey01/MLops-Final-Project/commits?author=Mihir-Khare429",
+        "demo": "https://github.com/Akkey01/MLops-Final-Project/commits?author=Mihir-Khare429",
+        "live": "https://github.com/Akkey01/MLops-Final-Project/commits?author=Mihir-Khare429"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "AI System Design Interview Coach",
+      "description": "Built an end-to-end AI voice pipeline that simulates real system design interviews, enabling adaptive, low-latency verbal Q&A with a fine-tuned Llama-3 model via LoRA adapters trained on system design corpora. Architected a real-time audio stack Whisper (STT) + Llama-3 LoRA (reasoning/generation) + TTS layer streamed bidirectionally over WebSockets with barge-in handling for natural turn-taking. Implemented context prioritization using cosine similarity scoring against a sliding memory window, managing KV cache growth to keep end-to-end response latency under target thresholds, drawing on MemGPT and Zep architectures. Optimized inference throughput via LoRA adapter quantization and streaming token delivery, reducing time-to-first-token for a responsive, real-time interview experience.",
+      "longDescription": "Built an end-to-end AI voice pipeline that simulates real system design interviews, enabling adaptive, low-latency verbal Q&A with a fine-tuned Llama-3 model via LoRA adapters trained on system design corpora. Architected a real-time audio stack Whisper (STT) + Llama-3 LoRA (reasoning/generation) + TTS layer streamed bidirectionally over WebSockets with barge-in handling for natural turn-taking. Implemented context prioritization using cosine similarity scoring against a sliding memory window, managing KV cache growth to keep end-to-end response latency under target thresholds, drawing on MemGPT and Zep architectures. Optimized inference throughput via LoRA adapter quantization and streaming token delivery, reducing time-to-first-token for a responsive, real-time interview experience.",
+      "category": "Web Development",
+      "technologies": [
+        "Llama-3",
+        "LoRA",
+        "Whisper",
+        "WebSockets",
+        "MemGPT",
+        "Zep"
+      ],
+      "icon": "fas fa-globe",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/system-design-interviewer-bot",
+      "demo": "https://github.com/Mihir-Khare429/system-design-interviewer-bot",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/system-design-interviewer-bot",
+        "demo": "https://github.com/Mihir-Khare429/system-design-interviewer-bot",
+        "live": "https://github.com/Mihir-Khare429/system-design-interviewer-bot"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "IWP-LAB-CODES",
+      "description": "All the lab codes for IWP Lab Assignments . Faculty - JayaKumar K",
+      "longDescription": "All the lab codes for IWP Lab Assignments . Faculty - JayaKumar K",
+      "category": "Data Science",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "PHP",
+        "CSS",
+        "XSLT"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/IWP-LAB-CODES",
+      "demo": "https://github.com/Mihir-Khare429/IWP-LAB-CODES",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/IWP-LAB-CODES",
+        "demo": "https://github.com/Mihir-Khare429/IWP-LAB-CODES",
+        "live": "https://github.com/Mihir-Khare429/IWP-LAB-CODES"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "SetMyCareerAssignment",
+      "description": "Task provided during interview",
+      "longDescription": "Task provided during interview",
+      "category": "Data Science",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#A8DADC",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/SetMyCareerAssignment",
+      "demo": "https://github.com/Mihir-Khare429/SetMyCareerAssignment",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/SetMyCareerAssignment",
+        "demo": "https://github.com/Mihir-Khare429/SetMyCareerAssignment",
+        "live": "https://github.com/Mihir-Khare429/SetMyCareerAssignment"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Weather-App",
+      "description": "Created using Javascript and API was taken from DarkSky use of SkyCons",
+      "longDescription": "Created using Javascript and API was taken from DarkSky use of SkyCons",
+      "category": "Data Science",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#B19CD9",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/Weather-App",
+      "demo": "https://github.com/Mihir-Khare429/Weather-App",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/Weather-App",
+        "demo": "https://github.com/Mihir-Khare429/Weather-App",
+        "live": "https://github.com/Mihir-Khare429/Weather-App"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Node-Session-Login",
+      "description": "Using ExpressJS for Login and Logout route using Session.  Password hashing using bcrypt.",
+      "longDescription": "Using ExpressJS for Login and Logout route using Session.  Password hashing using bcrypt.",
+      "category": "Data Science",
+      "technologies": [
+        "HTML",
+        "JavaScript"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#FF8B94",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/Node-Session-Login",
+      "demo": "https://github.com/Mihir-Khare429/Node-Session-Login",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/Node-Session-Login",
+        "demo": "https://github.com/Mihir-Khare429/Node-Session-Login",
+        "live": "https://github.com/Mihir-Khare429/Node-Session-Login"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "mern-chat-app",
+      "description": "Full-featured application built as a learning exercise",
+      "longDescription": "Full-featured application built as a learning exercise",
+      "category": "Data Science",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "Dockerfile",
+        "HTML"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/mern-chat-app",
+      "demo": "https://github.com/Mihir-Khare429/mern-chat-app",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/mern-chat-app",
+        "demo": "https://github.com/Mihir-Khare429/mern-chat-app",
+        "live": "https://github.com/Mihir-Khare429/mern-chat-app"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "terraform-aws-ecs-fargate",
+      "description": "Practice application demonstrating full-stack development skills",
+      "longDescription": "Practice application demonstrating full-stack development skills",
+      "category": "Software Development",
+      "technologies": [
+        "HCL",
+        "Makefile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/terraform-aws-ecs-fargate",
+      "demo": "https://github.com/Mihir-Khare429/terraform-aws-ecs-fargate",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/terraform-aws-ecs-fargate",
+        "demo": "https://github.com/Mihir-Khare429/terraform-aws-ecs-fargate",
+        "live": "https://github.com/Mihir-Khare429/terraform-aws-ecs-fargate"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "microservices-observability",
+      "description": "Practice repository for exploring advanced features",
+      "longDescription": "Practice repository for exploring advanced features",
+      "category": "Data Science",
+      "technologies": [
+        "Java",
+        "HTML",
+        "Shell"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/microservices-observability",
+      "demo": "https://github.com/Mihir-Khare429/microservices-observability",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/microservices-observability",
+        "demo": "https://github.com/Mihir-Khare429/microservices-observability",
+        "live": "https://github.com/Mihir-Khare429/microservices-observability"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "spark-kafka-cassandra-pipeline",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/spark-kafka-cassandra-pipeline",
+      "demo": "https://github.com/Mihir-Khare429/spark-kafka-cassandra-pipeline",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/spark-kafka-cassandra-pipeline",
+        "demo": "https://github.com/Mihir-Khare429/spark-kafka-cassandra-pipeline",
+        "live": "https://github.com/Mihir-Khare429/spark-kafka-cassandra-pipeline"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "mlops-app",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Backend Development",
+      "technologies": [
+        "HCL",
+        "Python",
+        "Jupyter Notebook",
+        "Dockerfile",
+        "Shell"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#B19CD9",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/mlops-app",
+      "demo": "https://github.com/Mihir-Khare429/mlops-app",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/mlops-app",
+        "demo": "https://github.com/Mihir-Khare429/mlops-app",
+        "live": "https://github.com/Mihir-Khare429/mlops-app"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Portfolio",
+      "description": "Portfolio website",
+      "longDescription": "Portfolio website",
+      "category": "Data Science",
+      "technologies": [
+        "SCSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#FF8B94",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/Portfolio",
+      "demo": "https://github.com/Mihir-Khare429/Portfolio",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/Portfolio",
+        "demo": "https://github.com/Mihir-Khare429/Portfolio",
+        "live": "https://github.com/Mihir-Khare429/Portfolio"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "llm-platform",
+      "description": "Built a unified, observable, multi-model inference gateway that serves LLMs (Mistral, Llama-3, etc.), supports caching & routing, exposes an OpenAI-style API, and runs multi-agent workflows via LangGraph.",
+      "longDescription": "Built a unified, observable, multi-model inference gateway that serves LLMs (Mistral, Llama-3, etc.), supports caching & routing, exposes an OpenAI-style API, and runs multi-agent workflows via LangGraph.",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/llm-platform",
+      "demo": "https://github.com/Mihir-Khare429/llm-platform",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/llm-platform",
+        "demo": "https://github.com/Mihir-Khare429/llm-platform",
+        "live": "https://github.com/Mihir-Khare429/llm-platform"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "PulumiPOC",
+      "description": "This project setups an API gateway automatically for any service in AWS.",
+      "longDescription": "This project setups an API gateway automatically for any service in AWS.",
+      "category": "Software Development",
+      "technologies": [
+        "TypeScript"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/PulumiPOC",
+      "demo": "https://github.com/Mihir-Khare429/PulumiPOC",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/PulumiPOC",
+        "demo": "https://github.com/Mihir-Khare429/PulumiPOC",
+        "live": "https://github.com/Mihir-Khare429/PulumiPOC"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "APIVersionComparator",
+      "description": "This helps in checking the consistency of response between two versions of api by performing a load test and uploading the discrepancies in the S3 bucket.",
+      "longDescription": "This helps in checking the consistency of response between two versions of api by performing a load test and uploading the discrepancies in the S3 bucket.",
+      "category": "Software Development",
+      "technologies": [
+        "HCL",
+        "JavaScript",
+        "Shell",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/APIVersionComparator",
+      "demo": "https://github.com/Mihir-Khare429/APIVersionComparator",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/APIVersionComparator",
+        "demo": "https://github.com/Mihir-Khare429/APIVersionComparator",
+        "live": "https://github.com/Mihir-Khare429/APIVersionComparator"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "TaskEstimator",
+      "description": "This machine learning model can be used to predict the number of days required to complete a given based on few features.",
+      "longDescription": "This machine learning model can be used to predict the number of days required to complete a given based on few features.",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "Cython",
+        "C",
+        "C++",
+        "Fortran",
+        "CSS",
+        "JavaScript",
+        "PowerShell",
+        "Smarty",
+        "Forth",
+        "Shell",
+        "Meson",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/TaskEstimator",
+      "demo": "https://github.com/Mihir-Khare429/TaskEstimator",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/TaskEstimator",
+        "demo": "https://github.com/Mihir-Khare429/TaskEstimator",
+        "live": "https://github.com/Mihir-Khare429/TaskEstimator"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "SSLA_Express",
+      "description": "Basic Simple Service Layer Architecture (SSLA) for Express Apps",
+      "longDescription": "Basic Simple Service Layer Architecture (SSLA) for Express Apps",
+      "category": "Software Development",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#B19CD9",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/SSLA_Express",
+      "demo": "https://github.com/Mihir-Khare429/SSLA_Express",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/SSLA_Express",
+        "demo": "https://github.com/Mihir-Khare429/SSLA_Express",
+        "live": "https://github.com/Mihir-Khare429/SSLA_Express"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Horsetails-Consulting",
+      "description": "Backend Developer Task",
+      "longDescription": "Backend Developer Task",
+      "category": "Software Development",
+      "technologies": [
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF8B94",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/Horsetails-Consulting",
+      "demo": "https://github.com/Mihir-Khare429/Horsetails-Consulting",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/Horsetails-Consulting",
+        "demo": "https://github.com/Mihir-Khare429/Horsetails-Consulting",
+        "live": "https://github.com/Mihir-Khare429/Horsetails-Consulting"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "IWP_PROJECT_BACKEND",
+      "description": "Backend for IWP Project",
+      "longDescription": "Backend for IWP Project",
+      "category": "Software Development",
+      "technologies": [
+        "JavaScript"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/IWP_PROJECT_BACKEND",
+      "demo": "https://github.com/Mihir-Khare429/IWP_PROJECT_BACKEND",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/IWP_PROJECT_BACKEND",
+        "demo": "https://github.com/Mihir-Khare429/IWP_PROJECT_BACKEND",
+        "live": "https://github.com/Mihir-Khare429/IWP_PROJECT_BACKEND"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "CSS-Basics",
+      "description": "Practising CSS basics By developing Websites",
+      "longDescription": "Practising CSS basics By developing Websites",
+      "category": "Data Science",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/CSS-Basics",
+      "demo": "https://github.com/Mihir-Khare429/CSS-Basics",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/CSS-Basics",
+        "demo": "https://github.com/Mihir-Khare429/CSS-Basics",
+        "live": "https://github.com/Mihir-Khare429/CSS-Basics"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "RabbitMQ",
+      "description": "Using Message Query for Micro Service . In Micro service local we used local event bus for carrying out the same Operation",
+      "longDescription": "Using Message Query for Micro Service . In Micro service local we used local event bus for carrying out the same Operation",
+      "category": "Software Development",
+      "technologies": [
+        "JavaScript"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/Mihir-Khare429/RabbitMQ",
+      "demo": "https://github.com/Mihir-Khare429/RabbitMQ",
+      "links": {
+        "github": "https://github.com/Mihir-Khare429/RabbitMQ",
+        "demo": "https://github.com/Mihir-Khare429/RabbitMQ",
+        "live": "https://github.com/Mihir-Khare429/RabbitMQ"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    }
+  ]
+}

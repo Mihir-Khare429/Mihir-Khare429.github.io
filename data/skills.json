@@ -1,0 +1,99 @@
+{
+  "_instructions": "Organize your skills with vibrant colors.",
+  "sectionTitle": "Skills & Technologies",
+  "categories": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "color": "#FF6B6B",
+      "skills": [
+        "Python",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "C++",
+        "Java",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "icon": "fas fa-toolbox",
+      "color": "#4ECDC4",
+      "skills": [
+        "React",
+        "Next.js",
+        "Redux",
+        "HTML5",
+        "CSS3",
+        "Tailwind",
+        "Figma",
+        "Jest",
+        "Cypress",
+        "React Testing Library",
+        "Node.js (Express, Koa)",
+        "Django",
+        "Flask",
+        "FastAPI",
+        ".NET Core",
+        "GraphQL",
+        "gRPC",
+        "TensorFlow",
+        "Sentence-Transformers",
+        "Whisper",
+        "Flan-T5",
+        "Ray Tune",
+        "FAISS"
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "color": "#FFE66D",
+      "skills": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Apache Iceberg",
+        "DynamoDB",
+        "Apache Spark (PySpark)",
+        "Apache Kafka",
+        "Parquet",
+        "Presto",
+        "AWS Glue",
+        "Athena",
+        "AWS (Glue, Athena, Lambda, ECS, EKS, Auto Scaling, S3, IAM)",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Pulumi",
+        "Git",
+        "GitHub Actions",
+        "ArgoCD",
+        "Ansible",
+        "CI/CD pipelines",
+        "Prometheus",
+        "Grafana",
+        "Sentry",
+        "MLflow"
+      ]
+    },
+    {
+      "category": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "color": "#A8DADC",
+      "skills": [
+        "Data Structures",
+        "Algorithms",
+        "System Design",
+        "Distributed Systems",
+        "Operating Systems",
+        "Computer Networks",
+        "ETL/ELT",
+        "RAG Systems",
+        "Microservices"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "_instructions": "Add your work experience here. Copy the experience object for each job.",
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Software Engineer Intern",
+      "company": "McKinsey Investment Office (MIO Partners)",
+      "period": "May 2025 - Aug 2025",
+      "location": "",
+      "description": "Architected MIO’s inaugural serverless trade-ops data lake by integrating AWS Glue, Apache Iceberg, and Athena to replace legacy retrieval methods. Using Apache Spark 3.4 to process 2.1M trade rows daily, the new architecture slashed TradeOps retrieval cycles from 14 minutes to 6 minutes and reclaimed 120 analyst hours per quarter.\nRedesigned the trade-extract pipeline on Parquet and Presto to solve for high p95 fetch latency. By parallelizing scans across 16 workers, fetch times dropped from 110s to 33s while the implementation of schema evolution allowed analysts to add trade attributes without requiring a system redeploy.\nEliminated a bottleneck of 40+ ad-hoc Python scripts by shipping standardized, IAM-scoped REST APIs and PySpark ETL jobs. This centralization streamlined the data-pull workflow for downstream analysts and reduced the volume of data-related support tickets by 60 percent.\nDrove technical reliability by partnering with quant teams on schema design and pre-production load testing. These reviews successfully caught race-condition bugs before the Q4 close and concluded with a full migration playbook documented in Confluence for long-term maintainability.",
+      "responsibilities": [
+        "Architected MIO’s inaugural serverless trade-ops data lake by integrating AWS Glue, Apache Iceberg, and Athena to replace legacy retrieval methods",
+        "Using Apache Spark 3",
+        "4 to process 2",
+        "1M trade rows daily, the new architecture slashed TradeOps retrieval cycles from 14 minutes to 6 minutes and reclaimed 120 analyst hours per quarter",
+        "Redesigned the trade-extract pipeline on Parquet and Presto to solve for high p95 fetch latency",
+        "By parallelizing scans across 16 workers, fetch times dropped from 110s to 33s while the implementation of schema evolution allowed analysts to add trade attributes without requiring a system redeploy",
+        "Eliminated a bottleneck of 40+ ad-hoc Python scripts by shipping standardized, IAM-scoped REST APIs and PySpark ETL jobs",
+        "This centralization streamlined the data-pull workflow for downstream analysts and reduced the volume of data-related support tickets by 60 percent",
+        "Drove technical reliability by partnering with quant teams on schema design and pre-production load testing",
+        "These reviews successfully caught race-condition bugs before the Q4 close and concluded with a full migration playbook documented in Confluence for long-term maintainability"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Cimpress Technologies Pvt Ltd",
+      "period": "Aug 2022 - Aug 2024",
+      "location": "",
+      "description": "Engineered a high-performance pricing architecture by restructuring core .NET and Node.js services to handle a high-volume traffic profile. Through targeted database I/O optimizations, the system supported over 150k requests per minute and realized a 30 percent reduction in read/write latency.\nAchieved global page-load consistency across three regions by re-engineering pricing workflows with React, GraphQL, and Express. The focus on refining GraphQL API contracts and state management reduced end-to-end latency by 25 percent and stabilized client-side performance.\nAccelerated the deployment pipeline by 40 percent by containerizing 7 .NET and Node services on Amazon EKS. Transitioning to blue-green rollouts reduced deployment windows from 22 minutes to 13 minutes, giving the merchandising team the ability to push live prices in under 60 seconds during peak sales.\nRaised Lighthouse accessibility scores from 78 to 96 was the result of a collaborative redesign of React state management. Working alongside accessibility engineers, we utilized Sentry monitoring to identify and resolve 35 percent of client-side bugs, significantly improving the stability of the pricing dashboard.",
+      "responsibilities": [
+        "Engineered a high-performance pricing architecture by restructuring core",
+        "NET and Node",
+        "js services to handle a high-volume traffic profile",
+        "Through targeted database I/O optimizations, the system supported over 150k requests per minute and realized a 30 percent reduction in read/write latency",
+        "Achieved global page-load consistency across three regions by re-engineering pricing workflows with React, GraphQL, and Express",
+        "The focus on refining GraphQL API contracts and state management reduced end-to-end latency by 25 percent and stabilized client-side performance",
+        "Accelerated the deployment pipeline by 40 percent by containerizing 7",
+        "NET and Node services on Amazon EKS",
+        "Transitioning to blue-green rollouts reduced deployment windows from 22 minutes to 13 minutes, giving the merchandising team the ability to push live prices in under 60 seconds during peak sales",
+        "Raised Lighthouse accessibility scores from 78 to 96 was the result of a collaborative redesign of React state management",
+        "Working alongside accessibility engineers, we utilized Sentry monitoring to identify and resolve 35 percent of client-side bugs, significantly improving the stability of the pricing dashboard"
+      ]
+    },
+    {
+      "title": "Backend Developer Intern",
+      "company": "Softech Applutions Pvt Ltd (Early-stage startup building the Trailer 2 You app)",
+      "period": "Jun 2020 - Nov 2020",
+      "location": "",
+      "description": "Delivered the full-stack backend for Trailer 2 You on a Node.js, Express, and MongoDB stack, scaling to 3,500 users in Australia at 99.7% uptime while processing 10k+ requests per minute via AWS ELB, Auto Scaling Groups, and CloudWatch monitoring.\nEngineered the end-to-end booking flow from React UI to Node.js/Express backend, integrating Socket.io for real-time map tracking and reducing data retrieval times by 20% through optimized MongoDB schemas and Mongoose ORM.",
+      "responsibilities": [
+        "Delivered the full-stack backend for Trailer 2 You on a Node",
+        "js, Express, and MongoDB stack, scaling to 3,500 users in Australia at 99",
+        "7% uptime while processing 10k+ requests per minute via AWS ELB, Auto Scaling Groups, and CloudWatch monitoring",
+        "Engineered the end-to-end booking flow from React UI to Node",
+        "js/Express backend, integrating Socket",
+        "io for real-time map tracking and reducing data retrieval times by 20% through optimized MongoDB schemas and Mongoose ORM"
+      ]
+    }
+  ]
+}
