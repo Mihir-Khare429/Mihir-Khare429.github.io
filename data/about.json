@@ -3,13 +3,14 @@
   "sectionTitle": "About Me",
   "image": "assets/images/profile.jpg",
   "paragraphs": [
-    "Passionate professional."
+    "I'm a software engineer who likes the backend: the data pipelines, the services that have to stay up, the parts most people never see. Right now I'm interning at McKinsey's investment office, where I built a serverless data lake that chews through a couple million trade records a day. Before that, two years at Cimpress reworking their pricing services to handle a lot more traffic than they were built for.",
+    "I got my start on the backend of a small Australian app called Trailer 2 You, which is where I learned how much I like owning something end to end. These days it's mostly Python and TypeScript, a fair bit of Spark and Kafka, and a growing pull toward ML and retrieval systems. I'm wrapping up my Master's at NYU after a B.Tech at VIT."
   ],
   "statistics": [
     {
       "icon": "fas fa-project-diagram",
       "value": "21+",
-      "label": "Projects Completed",
+      "label": "Projects Built",
       "color": "#FF6B6B"
     },
     {
@@ -25,9 +26,9 @@
       "color": "#FFE66D"
     },
     {
-      "icon": "fas fa-award",
-      "value": "0+",
-      "label": "Certifications",
+      "icon": "fas fa-graduation-cap",
+      "value": "2",
+      "label": "Degrees (NYU · VIT)",
       "color": "#A8DADC"
     }
   ],

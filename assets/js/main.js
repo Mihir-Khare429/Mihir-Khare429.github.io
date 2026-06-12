@@ -197,6 +197,35 @@ async function loadAbout() {
 }
 
 // ============================================
+// Company / institution logo helper
+// Real brand logos where available, on-brand monogram fallback otherwise
+// ============================================
+function brandLogoHTML(name) {
+    const n = (name || '').toLowerCase();
+    const file =
+        (n.includes('mckinsey') || n.includes('mio')) ? 'mckinsey.png' :
+        n.includes('cimpress') ? 'cimpress.png' :
+        n.includes('new york university') ? 'nyu.png' :
+        n.includes('vellore') ? 'vit.svg' :
+        null;
+
+    if (file) {
+        return `<span class="logo-chip"><img src="assets/images/logos/${file}" alt="${name} logo" loading="lazy"></span>`;
+    }
+
+    // Fallback: monogram from the institution's significant initials
+    const stop = new Set(['of', 'the', 'and', 'for', 'pvt', 'ltd', 'inc', 'llc', 'co', '&']);
+    const cleaned = (name || '').replace(/\(.*?\)/g, ' ');
+    let mono = cleaned.split(/[\s.,]+/)
+        .filter(w => w && !stop.has(w.toLowerCase()))
+        .map(w => w[0].toUpperCase())
+        .join('')
+        .slice(0, 3);
+    if (!mono) mono = ((name || '?').trim()[0] || '?').toUpperCase();
+    return `<span class="logo-chip logo-chip--mono">${mono}</span>`;
+}
+
+// ============================================
 // Load Experience Section
 // ============================================
 async function loadExperience() {
@@ -218,6 +247,7 @@ async function loadExperience() {
                     </div>
                     <div class="timeline-content">
                         <div class="experience-header">
+                            ${brandLogoHTML(exp.company)}
                             <h3 class="experience-title">${exp.title}</h3>
                             <p class="experience-company">
                                 ${exp.company} ${exp.location ? `• ${exp.location}` : ''}
@@ -292,51 +322,141 @@ async function loadProjects() {
         // Set section title
         document.getElementById('projects-title').textContent = data.sectionTitle;
 
-        // Render projects
         const projectsGrid = document.getElementById('projects-grid');
-        if (projectsGrid && data.projects) {
-            projectsGrid.innerHTML = data.projects.map(project => `
-                <div class="project-card">
-                    <div class="project-icon" style="background: ${project.color}">
-                        <i class="${project.icon}"></i>
+        const filtersBar = document.getElementById('projects-filters');
+        const emptyMsg = document.getElementById('projects-empty');
+        if (!projectsGrid || !data.projects) return;
+
+        const pad = (n) => String(n + 1).padStart(2, '0');
+
+        // Render tiles
+        projectsGrid.innerHTML = data.projects.map((project, index) => {
+            const category = project.category || 'Software Development';
+            const banner = `assets/images/projects/project-${index}.png`;
+            const description = project.longDescription || project.description || '';
+            const github = (project.links && project.links.github) || project.github;
+            const demo = (project.links && project.links.demo) || project.demo;
+            const techCount = (project.technologies || []).length;
+            return `
+            <article class="project-card" data-index="${index}" data-category="${category}" tabindex="0" role="button" aria-expanded="false" aria-label="${project.title}. Activate to expand details.">
+                <figure class="pc-media">
+                    <img class="pc-img" src="${banner}" alt="${project.title} artwork" loading="lazy" />
+                    <span class="pc-num">${pad(index)}</span>
+                    <span class="pc-tag">${category}</span>
+                </figure>
+                <div class="pc-body">
+                    <div class="pc-titlerow">
+                        <h3 class="pc-title"><i class="pc-ico ${project.icon}" aria-hidden="true"></i>${project.title}</h3>
+                        <span class="project-toggle" aria-hidden="true"><i class="fas fa-plus"></i></span>
                     </div>
-                    <div class="project-header">
-                        <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${description}</p>
+                    <div class="pc-quickmeta">
+                        ${techCount ? `<span><i class="fas fa-layer-group"></i> ${techCount} tools</span>` : ''}
+                        ${github ? `<span><i class="fab fa-github"></i> Code</span>` : ''}
+                        ${demo ? `<span><i class="fas fa-external-link-alt"></i> Demo</span>` : ''}
                     </div>
-                    <p class="project-description">${project.description}</p>
-                    ${project.technologies ? `
-                        <div class="project-tech">
-                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                        </div>
-                    ` : ''}
-                    ${project.links ? `
-                        <div class="project-links">
-                            ${project.links.github ? `
-                                <a href="${project.links.github}" target="_blank" rel="noopener noreferrer" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    Code
-                                </a>
-                            ` : ''}
-                            ${project.links.demo ? `
-                                <a href="${project.links.demo}" target="_blank" rel="noopener noreferrer" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live Demo
-                                </a>
-                            ` : ''}
-                        </div>
-                    ` : ''}
-                    ${project.stats ? `
-                        <div class="project-stats">
-                            ${Object.entries(project.stats).map(([key, value]) => `
-                                <div class="project-stat">
-                                    <span class="project-stat-value">${value}</span>
-                                    <span class="project-stat-label">${key}</span>
+                    <div class="project-details">
+                        <div class="pc-detail-inner">
+                            ${project.technologies ? `
+                                <div class="project-tech">
+                                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                                 </div>
-                            `).join('')}
+                            ` : ''}
+                            ${(github || demo) ? `
+                                <div class="project-links">
+                                    ${github ? `
+                                        <a href="${github}" target="_blank" rel="noopener noreferrer" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            Code
+                                        </a>
+                                    ` : ''}
+                                    ${demo ? `
+                                        <a href="${demo}" target="_blank" rel="noopener noreferrer" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Live Demo
+                                        </a>
+                                    ` : ''}
+                                </div>
+                            ` : ''}
+                            ${project.stats ? `
+                                <div class="project-stats">
+                                    ${Object.entries(project.stats).map(([key, value]) => `
+                                        <div class="project-stat">
+                                            <span class="project-stat-value">${value}</span>
+                                            <span class="project-stat-label">${key}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
                         </div>
-                    ` : ''}
+                    </div>
                 </div>
-            `).join('');
+            </article>
+            `;
+        }).join('');
+
+        const cards = Array.from(projectsGrid.querySelectorAll('.project-card'));
+
+        // Expand / collapse interaction (click anywhere on the card, or keyboard)
+        const toggleCard = (card) => {
+            const isOpen = card.classList.toggle('expanded');
+            card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        };
+        cards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return; // let real links work
+                toggleCard(card);
+            });
+            card.addEventListener('keydown', (e) => {
+                if (e.target.closest('a')) return;
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleCard(card);
+                }
+            });
+        });
+
+        // Category filter bar with live counts
+        if (filtersBar) {
+            const counts = data.projects.reduce((acc, p) => {
+                const c = p.category || 'Software Development';
+                acc[c] = (acc[c] || 0) + 1;
+                return acc;
+            }, {});
+            const categories = ['All', ...Object.keys(counts).sort()];
+
+            filtersBar.innerHTML = categories.map((cat, i) => {
+                const n = cat === 'All' ? data.projects.length : counts[cat];
+                return `<button class="filter-chip${i === 0 ? ' active' : ''}" data-filter="${cat}">
+                    ${cat}<span class="filter-count">${n}</span>
+                </button>`;
+            }).join('');
+
+            const applyFilter = (cat) => {
+                let visible = 0;
+                cards.forEach(card => {
+                    const match = cat === 'All' || card.dataset.category === cat;
+                    card.classList.toggle('is-hidden', !match);
+                    if (match) {
+                        card.classList.remove('expanded');
+                        card.setAttribute('aria-expanded', 'false');
+                        card.style.animationDelay = `${visible * 0.04}s`;
+                        card.classList.remove('pc-enter');
+                        void card.offsetWidth;        // restart entrance animation
+                        card.classList.add('pc-enter');
+                        visible++;
+                    }
+                });
+                if (emptyMsg) emptyMsg.hidden = visible !== 0;
+            };
+
+            filtersBar.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    filtersBar.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    applyFilter(chip.dataset.filter);
+                });
+            });
         }
     } catch (error) {
         console.error('Error loading projects section:', error);
@@ -359,9 +479,7 @@ async function loadEducation() {
         if (educationGrid && data.education) {
             educationGrid.innerHTML = data.education.map(edu => `
                 <div class="education-card">
-                    <div class="education-icon" style="background: ${edu.color}20; color: ${edu.color}">
-                        <i class="${edu.icon}"></i>
-                    </div>
+                    ${brandLogoHTML(edu.institution)}
                     <h3 class="education-degree">${edu.degree}</h3>
                     <p class="education-institution">${edu.institution}</p>
                     <p class="education-period">${edu.period}</p>
@@ -371,24 +489,6 @@ async function loadEducation() {
                             ${edu.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
                         </ul>
                     ` : ''}
-                </div>
-            `).join('');
-        }
-
-        // Set certifications title
-        document.getElementById('certifications-title').textContent = data.certificationsTitle;
-
-        // Render certifications
-        const certificationsGrid = document.getElementById('certifications-grid');
-        if (certificationsGrid && data.certifications) {
-            certificationsGrid.innerHTML = data.certifications.map(cert => `
-                <div class="certification-card">
-                    <div class="certification-icon" style="color: ${cert.color}">
-                        <i class="${cert.icon}"></i>
-                    </div>
-                    <h4 class="certification-title">${cert.title}</h4>
-                    <p class="certification-issuer">${cert.issuer}</p>
-                    <p class="certification-date">${cert.date}</p>
                 </div>
             `).join('');
         }
@@ -687,34 +787,34 @@ function initializeParticles() {
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 80,
+                    value: 45,
                     density: {
                         enable: true,
-                        value_area: 800
+                        value_area: 900
                     }
                 },
                 color: {
-                    value: ['#667eea', '#764ba2', '#f093fb']
+                    value: ['#c5f82a', '#f5f3ee', '#8a8a82']
                 },
                 shape: {
                     type: 'circle'
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0.35,
                     random: true,
                     anim: {
                         enable: true,
-                        speed: 1,
-                        opacity_min: 0.1,
+                        speed: 0.6,
+                        opacity_min: 0.05,
                         sync: false
                     }
                 },
                 size: {
-                    value: 3,
+                    value: 2,
                     random: true,
                     anim: {
                         enable: true,
-                        speed: 2,
+                        speed: 1.5,
                         size_min: 0.1,
                         sync: false
                     }
@@ -722,13 +822,13 @@ function initializeParticles() {
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#667eea',
-                    opacity: 0.2,
+                    color: '#c5f82a',
+                    opacity: 0.06,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 2,
+                    speed: 0.9,
                     direction: 'none',
                     random: false,
                     straight: false,
